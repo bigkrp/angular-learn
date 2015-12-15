@@ -1,0 +1,32 @@
+{
+  "name": "angular-learn",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server -a 0.0.0.0 -p 8000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bigkrp/angular-learn.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bigkrp/angular-learn/issues"
+  },
+  "homepage": "https://github.com/bigkrp/angular-learn#readme",
+  "devDependencies": {
+    "babel-core": "^6.3.17",
+    "babel-loader": "^6.2.0",
+    "babel-preset-es2015": "^6.3.13",
+    "css-loader": "^0.23.0",
+    "file-loader": "^0.8.5",
+    "html-loader": "^0.4.0",
+    "http-server": "^0.8.5",
+    "less-loader": "^2.2.2",
+    "style-loader": "^0.13.0",
+    "webpack": "^1.12.9"
+  }
+}

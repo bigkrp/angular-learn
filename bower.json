@@ -1,0 +1,21 @@
+{
+  "name": "angular-learn",
+  "description": "",
+  "main": "index.js",
+  "license": "ISC",
+  "homepage": "https://github.com/bigkrp/angular-learn",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "angular": "~1.4.8",
+    "angular-mocks": "~1.4.8",
+    "jquery": "~2.1.4",
+    "bootstrap": "~3.3.6"
+  }
+}
