@@ -2,7 +2,11 @@ import './vendors/bootstrap/less/bootstrap.less';
 
 import './style/main.less';
 
-import angular from 'angular';
+import './vendors/angular/angular.min.js';
+
+import './phones/phones.json';
+
+import './js/controllers.js';
 
 // import entry from 'entry.html';
 let entry = require('html!./entry.html');
