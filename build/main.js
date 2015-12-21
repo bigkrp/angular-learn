@@ -53,12 +53,12 @@
 
 	__webpack_require__(81);
 
-	__webpack_require__(84);
-
 	__webpack_require__(82);
 
+	__webpack_require__(83);
+
 	// import entry from 'entry.html';
-	var entry = __webpack_require__(83);
+	var entry = __webpack_require__(84);
 
 	document.getElementById('main-wrap').innerHTML = entry;
 	// angular.module('app', []);
@@ -507,6 +507,13 @@
 /***/ },
 
 /***/ 82:
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "phones/phones.json";
+
+/***/ },
+
+/***/ 83:
 /***/ function(module, exports) {
 
 	'use strict';
@@ -523,17 +530,10 @@
 
 /***/ },
 
-/***/ 83:
+/***/ 84:
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"container-fluid\">\n  <div class=\"row\">\n    <div class=\"col-md-2\">\n      <!-- Sidebar content -->\n\n      Search: <input ng-model=\"query\">\n      \n      Sort by:\n      <select ng-model=\"orderProp\">\n        <option value=\"name\">Alphabetical</option>\n        <option value=\"age\">Newest</option>\n      </select>\n    </div>\n    <div class=\"col-md-10\">\n      <!-- Body content -->\n\n      <ul class=\"phones\">\n        <li ng-repeat=\"phone in phones | filter:query | orderBy:orderProp\">\n          {{phone.name}}\n          <p>{{phone.snippet}}</p>\n        </li>\n      </ul>\n\n    </div>\n  </div>\n</div>";
-
-/***/ },
-
-/***/ 84:
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "phones/phones.json";
 
 /***/ }
 

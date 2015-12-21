@@ -15,7 +15,7 @@ module.exports = {
     },
     resolve: {
         extensions: ['', '.js', '.less'],
-        root: [path.join(__dirname, "app/vendors")]
+        // root: [path.join(__dirname, "app/vendors")]
     },
 
     module: {
@@ -42,6 +42,10 @@ module.exports = {
             new webpack.ResolverPlugin.DirectoryDescriptionFilePlugin("bower.json", ["main"])
         )
     ],
+    devServer: {
+        contentBase: __dirname + '/build',
+        hot: true
+    }
 
-    watch: true
+    // watch: true
 };
