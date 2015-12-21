@@ -2,8 +2,9 @@
 
 const webpack = require('webpack');
 const path = require('path');
+const TransferWebpackPlugin = require('transfer-webpack-plugin');
 
-module.exports = {
+module.exports = { // --inline --hot
     context: /*path.resolve(*/__dirname + '/app'/*)*/,
     entry: {
         main: './main'
@@ -40,7 +41,11 @@ module.exports = {
     plugins: [
         new webpack.ResolverPlugin(
             new webpack.ResolverPlugin.DirectoryDescriptionFilePlugin("bower.json", ["main"])
-        )
+        ),
+        new TransferWebpackPlugin([
+            { from: 'img', to: 'img' },
+            { from: 'partials', to: 'partials'}
+        ])
     ],
     devServer: {
         contentBase: __dirname + '/build',

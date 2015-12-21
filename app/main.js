@@ -7,6 +7,7 @@ import './vendors/angular/angular.min.js';
 import './phones/phones.json';
 
 import './js/controllers.js';
+import './js/app.js';
 
 // import entry from 'entry.html';
 let entry = require('html!./entry.html');
