@@ -50,7 +50,7 @@ module.exports = { // --inline --hot
     devServer: {
         contentBase: __dirname + '/build',
         hot: true
-    }
+    },
 
-    // watch: true
+    watch: true
 };
