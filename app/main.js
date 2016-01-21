@@ -8,6 +8,7 @@ import './vendors/angular-route/angular-route.min.js';
 import './phones/phones.json';
 
 import './js/app.js';
+import './js/filters.js';
 import './js/controllers.js';
 
 // import entry from 'entry.html';
