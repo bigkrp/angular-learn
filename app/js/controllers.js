@@ -18,5 +18,10 @@ function PhoneDetailCtrl ($scope, $routeParams, $http) {
 
     $http.get('phones/' + $routeParams.phoneId + '.json').success(function(data){
         $scope.phone = data;
+        $scope.mainImgUrl = data.images[0];
+
+        $scope.setImage = function(imgUrl){
+            $scope.mainImgUrl = imgUrl;
+        };
     });
 }
