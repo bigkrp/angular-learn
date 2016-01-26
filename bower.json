@@ -13,10 +13,11 @@
     "tests"
   ],
   "devDependencies": {
-    "angular": "~1.4.8",
-    "angular-mocks": "~1.4.8",
-    "jquery": "~2.1.4",
-    "bootstrap": "~3.3.6",
-    "angular-route": "1.4.x"
+    "angular": "1.4.x",
+    "angular-mocks": "1.4.x",
+    "jquery": "~2.1.1",
+    "bootstrap": "~3.1.1",
+    "angular-route": "1.4.x",
+    "angular-resource": "1.4.x"
   }
 }
