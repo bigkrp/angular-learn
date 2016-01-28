@@ -2,9 +2,10 @@
 
 angular.module('phonecat', [
   'ngRoute',
-  'phonecatController',
+  'phonecatControllers',
   'phonecatFilters',
-  'phonecatServices'
+  'phonecatServices',
+  'phonecatAnimations'
   ]).
     config(['$routeProvider',
     function($routeProvider){

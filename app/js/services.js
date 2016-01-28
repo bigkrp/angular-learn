@@ -2,7 +2,7 @@
 
 angular.module('phonecatServices', ['ngResource']).
     factory('Phone', function($resource){
-        return $resource('phone/:phoneId.json', {}, {
+        return $resource('phones/:phoneId.json', {}, {
             query: {
                 method: 'GET',
                 params: {
