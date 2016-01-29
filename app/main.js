@@ -2,7 +2,7 @@ import './vendors/bootstrap/less/bootstrap.less';
 
 import './style/main.less';
 
-import './vendors/jquery/dist/jquery.min.js';
+import './vendors/jquery/dist/jquery.js';
 import './vendors/angular/angular.min.js';
 import './vendors/angular-route/angular-route.min.js';
 import './vendors/angular-resource/angular-resource.min.js';
